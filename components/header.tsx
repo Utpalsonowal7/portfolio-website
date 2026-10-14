@@ -11,6 +11,7 @@ import { SocialLink } from "./social";
 const links = [
      { href: "/", label: "home" },
      { href: "/projects", label: "works" },
+     { href: "/skills", label: "skills" },
      { href: "/about", label: "about-me" },
      { href: "/contacts", label: "contacts" },
 ];
@@ -106,7 +107,7 @@ export function Header() {
                     </div>
                     <nav
                          aria-label="Mobile navigation"
-                         className="flex flex-col items-start gap-8 px-4 pt-[47px] text-[32px] leading-[42px]"
+                         className="flex flex-col items-start gap-6 px-4 pt-8 text-[32px] leading-[42px]"
                     >
                          {links.map((link) => (
                               <Link
@@ -130,7 +131,7 @@ export function Header() {
                          ))}
                          <Language />
                     </nav>
-                    <div className="absolute right-0 bottom-9 left-0 flex justify-center gap-2">
+                    <div className="mt-12 flex justify-center gap-2 pb-9">
                          <SocialLink name="github" large />
                          <SocialLink name="dribbble" large />
                          <SocialLink name="figma" large />

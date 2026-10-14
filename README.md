@@ -43,13 +43,16 @@ The source compiles without the missing assets, but supply them before publishin
 
 - `/` — hero, quote, three featured projects, skills, about, contact section.
 - `/projects` — five complete applications and eight smaller projects.
-- `/about` — biography, full skills list, fun facts.
+- `/about` — biography, compact skills list, fun facts.
+- `/skills` — eight detailed skill categories, individual technology tags, and category navigation.
 - `/contacts` — original contact and media layout.
 - Responsive mobile navigation uses a native dialog with Escape-to-close and focus handling.
 - Project actions open a project preview when no URL is supplied. Add `url` to the corresponding action in `lib/portfolio.ts` to link to a real demo or repository.
 - Social icons with an empty configured URL open a contact dialog. Supply real profile URLs in `portfolio.social` to enable external navigation.
 - Discord handles can be copied; email links open your mail client.
 - The EN language indicator preserves the visual design. Translation is not part of this implementation.
+
+`lib/skills.ts` contains the detailed skill categories, compact homepage rows, and extended tool list.
 
 `components/` contains shared navigation, footer, project cards, contact cards, typography, portraits, and decorations. Layout and component styling use Tailwind; `app/globals.css` contains the Tailwind import, theme tokens, base styles, and reduced-motion behavior.
 
