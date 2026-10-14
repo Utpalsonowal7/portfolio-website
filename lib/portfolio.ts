@@ -304,7 +304,7 @@ export const completeProjects: Project[] = [
           description:
                "A responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS.",
           technologies: [["Next.js", "TypeScript", "Tailwind CSS"]],
-          image: "/assets/portfolio.png",
+          image: "/assets/pr5.png",
           actions: [
                {
                     label: "Github",
