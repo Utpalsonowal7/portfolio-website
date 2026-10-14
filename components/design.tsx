@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { assets } from "@/lib/assets";
-import { portfolio, skills } from "@/lib/portfolio";
+import { portfolio } from "@/lib/portfolio";
+import { extendedTools, skills } from "@/lib/skills";
 import type { ReactNode } from "react";
 
 export const container = "mx-auto w-full max-w-[1024px] px-4 min-[1100px]:px-0";
@@ -157,7 +158,7 @@ export function SkillBox({
 }) {
      const rows: readonly string[] =
           extended && name === "Tools"
-               ? [...skills.Tools, "KDE fish"]
+               ? extendedTools
                : skills[name];
      return (
           <div className="ring-gray ring-1 ring-inset">

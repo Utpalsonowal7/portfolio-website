@@ -168,6 +168,9 @@ export default function Home() {
                                    </div>
                               </div>
                          </div>
+                         <div className="mt-6 flex justify-end">
+                              <OutlineButton href="/skills">View all skills -&gt;</OutlineButton>
+                         </div>
                     </section>
 
                     <section
