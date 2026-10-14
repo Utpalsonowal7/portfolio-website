@@ -11,7 +11,7 @@ export const skillCategories: readonly SkillCategory[] = [
           title: "Languages",
           description:
                "The languages I use to build interfaces, APIs, and business applications.",
-          skills: ["TypeScript", "JavaScript", "Python", "PHP", "HTML", "CSS"],
+          skills: ["TypeScript", "JavaScript", "Python", "C", "C++", "PHP", "HTML", "CSS"],
      },
      {
           id: "frontend",
@@ -24,6 +24,11 @@ export const skillCategories: readonly SkillCategory[] = [
                "Tailwind CSS",
                "Bootstrap",
                "Responsive Design",
+               "Shadcn UI",
+               "React Router",
+               "Redux Toolkit",
+               "Context API",
+               "Axios",
           ],
      },
      {
@@ -38,6 +43,7 @@ export const skillCategories: readonly SkillCategory[] = [
                "REST APIs",
                "Server-Sent Events",
                "API Integrations",
+               "Zod",
           ],
      },
      {
@@ -47,6 +53,7 @@ export const skillCategories: readonly SkillCategory[] = [
                "Relational data, vector search, caching, and database access.",
           skills: [
                "PostgreSQL",
+               "MongoDB",
                "pgvector",
                "Redis",
                "Prisma",
@@ -68,6 +75,10 @@ export const skillCategories: readonly SkillCategory[] = [
                "HttpOnly Cookies",
                "Refresh Token Rotation",
                "Session Management",
+               "Authentication & Authorization",
+               "Account Linking",
+               "Email Verification",
+               "Multi-Tenant Data Isolation",
           ],
      },
      {
@@ -76,7 +87,11 @@ export const skillCategories: readonly SkillCategory[] = [
           description:
                "Document retrieval, AI integrations, and asynchronous processing.",
           skills: [
-               "Gemini SDK",
+               "Gemini API / SDK",
+               "LLMs",
+               "Prompt Engineering",
+               "Vector Databases",
+               "BullMQ",
                "Retrieval-Augmented Generation",
                "Embeddings",
                "Vector Search",
@@ -101,7 +116,7 @@ export const skillCategories: readonly SkillCategory[] = [
                "Railway",
                "Cloudflare",
                "Docker",
-               "GitHub Actions",
+               "CI/CD (GitHub Actions)",
                "Custom Domains",
                "DNS Configuration",
           ],
@@ -116,6 +131,8 @@ export const skillCategories: readonly SkillCategory[] = [
                "GitHub",
                "VSCode",
                "Postman",
+               "Figma",
+               "k6",
                "Linux",
                "WSL",
                "Cloudinary",
@@ -128,7 +145,8 @@ export const skillCategories: readonly SkillCategory[] = [
 
 export const skills = {
      Languages: ["TypeScript", "JavaScript", "Python PHP"],
-     Databases: ["PostgreSQL", "pgvector Redis"],
+     Databases: ["PostgreSQL",
+               "MongoDB", "pgvector Redis"],
      Other: ["HTML CSS", "Tailwind Bootstrap", "REST APIs OAuth"],
      Tools: ["Git GitHub", "Docker VSCode"],
      Frameworks: ["React Next.js", "Express FastAPI"],
@@ -137,5 +155,5 @@ export const skills = {
 export const extendedTools: readonly string[] = [
      ...skills.Tools,
      "Postman Linux WSL",
-     "GitHub Actions",
+     "CI/CD (GitHub Actions)",
 ];

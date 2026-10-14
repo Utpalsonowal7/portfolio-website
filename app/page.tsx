@@ -38,12 +38,18 @@ export default function Home() {
                                    applications, combining intuitive frontend
                                    experiences with powerful backend systems.
                               </p>
-                              <OutlineButton
-                                   href="/contacts"
-                                   className="mt-6 hidden md:inline-flex"
-                              >
-                                   Contact me!!
-                              </OutlineButton>
+                              <div className="mt-6 flex flex-wrap items-center gap-4">
+                                   <OutlineButton href="/contacts">
+                                        Contact me!!
+                                   </OutlineButton>
+                                   <a
+                                        href="/cv.pdf"
+                                        download="Utpal-Sonowal-CV.pdf"
+                                        className="inline-flex min-h-[37px] items-center justify-center border border-gray px-4 py-[7px] text-base leading-[21px] font-medium text-gray transition-colors hover:bg-gray/10"
+                                   >
+                                        Download CV
+                                   </a>
+                              </div>
                          </div>
                          <div className="mx-auto w-full max-w-[316px] md:max-w-[469px]">
                               <div className="relative aspect-[469/386]">
