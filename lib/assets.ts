@@ -1,6 +1,7 @@
 export const assets = {
   github: "/assets/e96d3.svg",
   dribbble: "/assets/74a6a.svg",
+  linkedin: "/assets/q.svg",
   figma: "/assets/92c6a.svg",
   discord: "/assets/f93a5.svg",
   email: "/assets/054aa.svg",
@@ -15,5 +16,6 @@ export const assets = {
   portraitLine: "/assets/34987.svg",
   quote: "/assets/543dd.svg",
   hero: "/assets/7dfd8.png",
-  about: "/assets/6f69b.png",
+  about: "/assets/6969.png",
+  pulseboard: "/assets/pr3.png",
 } as const;
