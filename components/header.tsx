@@ -12,6 +12,7 @@ const links = [
      { href: "/", label: "home" },
      { href: "/projects", label: "works" },
      { href: "/skills", label: "skills" },
+     { href: "/#experience", label: "experience" },
      { href: "/about", label: "about-me" },
      { href: "/contacts", label: "contacts" },
 ];
@@ -57,7 +58,7 @@ export function Header() {
                     <Brand />
                     <nav
                          aria-label="Main navigation"
-                         className="hidden items-center gap-8 md:flex"
+                         className="hidden items-center gap-4 lg:gap-8 md:flex"
                     >
                          {links.map((link) => (
                               <Link
