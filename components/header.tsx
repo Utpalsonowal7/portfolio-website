@@ -134,8 +134,8 @@ export function Header() {
                     </nav>
                     <div className="mt-12 flex justify-center gap-2 pb-9">
                          <SocialLink name="github" large />
-                         <SocialLink name="dribbble" large />
-                         <SocialLink name="figma" large />
+                         <SocialLink name="linkedin" large />
+                         <SocialLink name="twitter" large />
                     </div>
                </dialog>
           </>

@@ -155,9 +155,18 @@ export default function Home() {
                          className="mt-20 md:mt-[106px]"
                          aria-labelledby="skills-title"
                     >
-                         <SectionHeading line className="max-w-[391px]">
-                              <span id="skills-title">skills</span>
-                         </SectionHeading>
+                         <div className="flex items-center justify-between gap-4">
+                              <SectionHeading line className="max-w-[701px]">
+                                   <span id="skills-title">skills</span>
+                              </SectionHeading>
+                              <Link
+                                   href="/skills"
+                                   className="shrink-0 text-sm font-medium transition-colors hover:text-primary sm:text-base"
+                              >
+                                   View all ~~&gt;
+                              </Link>
+                         </div>
+
                          <div className="mt-8 grid gap-8 md:mt-[43px] lg:grid-cols-[408px_1fr] lg:gap-8">
                               <div className="hidden pt-0 pl-8 lg:block">
                                    <div className="-mt-[31px]">
@@ -176,9 +185,6 @@ export default function Home() {
                                    </div>
                               </div>
                          </div>
-                         <div className="mt-6 flex justify-end">
-                              <OutlineButton href="/skills">View all skills -&gt;</OutlineButton>
-                         </div>
                     </section>
 
                     <section
@@ -186,17 +192,28 @@ export default function Home() {
                          className="mt-20 scroll-mt-8 md:mt-[106px]"
                          aria-labelledby="experience-title"
                     >
-                         <SectionHeading line className="max-w-[500px]">
-                              <span id="experience-title">experience</span>
-                         </SectionHeading>
+                         <div className="flex items-center justify-between gap-4">
+                              <SectionHeading line className="max-w-[701px]">
+                                   <span id="experience-title">experience</span>
+                              </SectionHeading>
+                              <Link
+                                   href="/experience"
+                                   className="shrink-0 text-sm font-medium transition-colors hover:text-primary sm:text-base"
+                              >
+                                   View all ~~&gt;
+                              </Link>
+                         </div>
+
                          <div className="mt-8 space-y-4 md:mt-12">
-                              {experiences.slice(0, 1).map(experience => (
-                                   <ExperienceCard key={experience.id} experience={experience} compact />
+                              {experiences.slice(0, 1).map((experience) => (
+                                   <ExperienceCard
+                                        key={experience.id}
+                                        experience={experience}
+                                        compact
+                                   />
                               ))}
                          </div>
-                         <div className="mt-6 flex justify-end">
-                              <OutlineButton href="/experience">View all experience -&gt;</OutlineButton>
-                         </div>
+                         
                     </section>
 
                     <section
