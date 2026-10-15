@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/contact-form";
 import type { Metadata } from "next";
 import { Background } from "@/components/background";
 import { ContactCard } from "@/components/contact";
@@ -12,7 +13,7 @@ export default function ContactsPage() {
           <main id="main-content" className="relative">
                <Background />
                <div className={`${container} relative min-h-[521px] pb-[83px]`}>
-                    <PageTitle name="contacts" description="Who am i?" />
+                    <PageTitle name="contacts" description="Let’s build something together" />
                     <section
                          aria-label="Contact information"
                          className="mt-[46px] flex flex-col items-start justify-between gap-8 lg:flex-row"
@@ -24,6 +25,10 @@ export default function ContactsPage() {
                               
                               <ContactCard />
                          </div>
+                    </section>
+                    <section className="mt-12" aria-labelledby="message-title">
+                         <SectionHeading><span id="message-title">send-a-message</span></SectionHeading>
+                         <ContactForm />
                     </section>
                     <section
                          className="mt-[25px]"

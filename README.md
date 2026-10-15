@@ -64,7 +64,7 @@ npm run check:assets
 npm run build
 ```
 
-Next.js exports the site to `out/`. You can deploy it as a static website or deploy the repository on Vercel. For a server-rendered Next.js deployment, remove `output: 'export'` from `next.config.ts`, then use `npm run build` and `npm start`.
+Deploy the repository on Vercel with the Next.js preset, or use `npm run build` and `npm start` on a Node.js server. The contact form requires the `/api/contact` server route, so static export is disabled.
 
 This project can be deployed independently on Vercel or static hosting.
 
@@ -79,3 +79,7 @@ The original design attribution and sample content are retained. Check the Commu
 ### Updating experience
 
 Add roles to `experiences` in `lib/experience.ts`, newest first. Each entry supports role, organization, employment type, start/end dates, location, description, achievements, and technologies. Omit `endDate` for “Present”. The homepage previews the newest entry; `/experience` displays every entry.
+
+### Contact form email setup
+
+Set `BREVO_API_KEY`, `BREVO_SENDER_EMAIL` (a verified Brevo sender), and `CONTACT_TO_EMAIL` in Vercel environment variables, then redeploy. For local development, copy `.env.example` to `.env.local` and fill the values. Never prefix these secrets with `NEXT_PUBLIC_`. Messages use the visitor’s address as Reply-To; the sender remains your verified address. The form includes validation, a hidden spam-trap field, loading and delivery status. No email is sent until these variables are configured.
