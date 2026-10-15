@@ -75,3 +75,7 @@ Figma file: https://www.figma.com/design/gYse7ukSOayUzVGwBuoZZa/Portfolio--Commu
 Reference frames: Home `1:2`, Projects `42:403`, About `45:1033`, Contacts `55:1903`, mobile header `200:1433`, mobile menu `200:1352`.
 
 The original design attribution and sample content are retained. Check the Community file's license before redistributing its original assets.
+
+### Updating experience
+
+Add roles to `experiences` in `lib/experience.ts`, newest first. Each entry supports role, organization, employment type, start/end dates, location, description, achievements, and technologies. Omit `endDate` for “Present”. The homepage previews the newest entry; `/experience` displays every entry.

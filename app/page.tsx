@@ -1,3 +1,5 @@
+import { ExperienceCard } from "@/components/experience-card";
+import { experiences } from "@/lib/experience";
 import Link from "next/link";
 import {
      AboutCopy,
@@ -187,34 +189,14 @@ export default function Home() {
                          <SectionHeading line className="max-w-[500px]">
                               <span id="experience-title">experience</span>
                          </SectionHeading>
-                         <article className="mt-8 border border-gray md:mt-12">
-                              <div className="flex flex-col gap-3 border-b border-gray p-5 sm:flex-row sm:items-start sm:justify-between sm:p-6">
-                                   <div>
-                                        <h3 className="text-xl font-semibold text-white">Full Stack Developer Intern</h3>
-                                        <p className="mt-2 text-base text-primary">National Informatics Centre (NIC)</p>
-                                   </div>
-                                   <div className="shrink-0 text-sm leading-6 text-gray sm:text-right">
-                                        <p>Jan 2025 – Dec 2025</p>
-                                        <p>Lakhimpur, Assam, India</p>
-                                   </div>
-                              </div>
-                              <div className="p-5 sm:p-6">
-                                   <p className="max-w-[850px] text-base leading-[26px] text-gray">
-                                        Built a two-tier transportation management system to automate food supply transportation billing across warehouses, wholesalers, and retailers.
-                                   </p>
-                                   <ul className="mt-5 list-disc space-y-3 pl-5 text-base leading-[26px] text-gray marker:text-primary">
-                                        <li>Implemented role-based access for system administrators, district administrators, and data-entry users.</li>
-                                        <li>Automated transportation costs using commodity, distance, and geographical area data.</li>
-                                        <li>Reduced billing preparation from approximately 3–4 hours to around 10 minutes.</li>
-                                        <li>Generated downloadable Excel billing sheets with automated formatting and monthly reports.</li>
-                                   </ul>
-                                   <ul aria-label="Technologies used" className="mt-6 flex flex-wrap gap-2">
-                                        {["PHP", "PostgreSQL", "JavaScript", "Bootstrap"].map(technology => (
-                                             <li key={technology} className="border border-gray px-2 py-1 text-sm text-gray">{technology}</li>
-                                        ))}
-                                   </ul>
-                              </div>
-                         </article>
+                         <div className="mt-8 space-y-4 md:mt-12">
+                              {experiences.slice(0, 1).map(experience => (
+                                   <ExperienceCard key={experience.id} experience={experience} compact />
+                              ))}
+                         </div>
+                         <div className="mt-6 flex justify-end">
+                              <OutlineButton href="/experience">View all experience -&gt;</OutlineButton>
+                         </div>
                     </section>
 
                     <section
