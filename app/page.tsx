@@ -45,7 +45,7 @@ export default function Home() {
                                         Contact me!!
                                    </OutlineButton>
                                    <a
-                                        href="/cv.pdf"
+                                        href="/Utpal-Sonowal-CV.pdf"
                                         download="Utpal-Sonowal-CV.pdf"
                                         className="inline-flex min-h-[37px] items-center justify-center border border-gray px-4 py-[7px] text-base leading-[21px] font-medium text-gray transition-colors hover:bg-gray/10"
                                    >
@@ -213,7 +213,6 @@ export default function Home() {
                                    />
                               ))}
                          </div>
-                         
                     </section>
 
                     <section
